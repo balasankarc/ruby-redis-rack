@@ -13,3 +13,15 @@
 
 %:
 	dh $@ --buildsystem=ruby --with ruby
+
+override_dh_auto_clean:
+	dh_auto_clean -O--buildsystem=ruby
+	# kill redis server for tests, don't fail if not started
+	debian/stop-redis-server.sh || true
+
+override_dh_auto_install:
+	# start redis server for tests
+	debian/start-redis-server.sh
+	dh_auto_install -O--buildsystem=ruby
+	# kill redis server used for tests
+	debian/stop-redis-server.sh

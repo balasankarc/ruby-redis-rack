@@ -1,5 +1,5 @@
-ruby-redis-rack (1.5.0-1) UNRELEASED; urgency=medium
+ruby-redis-rack (1.5.0-1) unstable; urgency=medium
 
-  * Initial release (Closes: #nnnn)
+  * Initial release (Closes: #771401)
 
- -- Balasankar C <balasankarc@autistici.org>  Sat, 29 Nov 2014 13:53:05 +0530
+ -- Balasankar C <balasankarc@autistici.org>  Sat, 29 Nov 2014 12:50:22 +0530
