@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
 Uploaders: Balasankar C <balasankarc@autistici.org>
 Build-Depends: debhelper (>= 7.0.50~), gem2deb, ruby-redis-store, ruby-rack, ruby-mocha
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-redis-rack.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ruby-extras/ruby-redis-rack.git;a=summary
 Homepage: http://redis-store.org/redis-rack
@@ -16,4 +16,8 @@ Architecture: all
 XB-Ruby-Versions: ${ruby:Versions}
 Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter, ruby-rack, ruby-redis-store
 Description: Redis Store for Rack
- Redis Store for Rack
+ redis-rack provides a Redis backed session store Rack. Redis Store provides a 
+ full set of stores (Cache, I18n, Session, HTTP Cache) for modern Ruby 
+ frameworks like: Ruby on Rails, Sinatra, Rack, Rack::Cache and I18n. It 
+ supports object marshalling, timeouts, single or multiple nodes, and 
+ namespaces.
