@@ -1,0 +1,27 @@
+Description: requiring version from lib
+ Require version.rb from lib folder.
+ .
+ ruby-redis-rack (1.5.0-1) unstable; urgency=medium
+ .
+   * Initial release (Closes: #771401)
+Author: Balasankar C <balasankarc@autistici.org>
+Bug-Debian: https://bugs.debian.org/771401
+
+
+--- ruby-redis-rack-1.5.0.orig/test/redis/rack/version_test.rb
++++ ruby-redis-rack-1.5.0/test/redis/rack/version_test.rb
+@@ -1,5 +1,5 @@
+ require 'test_helper'
+-
++require 'redis/rack/version'
+ describe Redis::Rack::VERSION do
+   it 'returns current version' do
+     Redis::Rack::VERSION.must_equal '1.5.0'
+--- ruby-redis-rack-1.5.0.orig/test/test_helper.rb
++++ ruby-redis-rack-1.5.0/test/test_helper.rb
+@@ -1,4 +1,4 @@
+-require 'bundler/setup'
++#require 'bundler/setup'
+ require 'minitest/autorun'
+ require 'mocha/setup'
+ require 'rack'
