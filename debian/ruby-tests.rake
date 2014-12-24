@@ -19,12 +19,11 @@ task :start_redis do
     sh 'redis-server --daemonize yes --port 6381&'
 end
 
-task :stop_redis do
-    sh 'pkill redis-server'
-end
-require 'gem2deb/rake/testtask'
-
 Rake::TestTask.new do |t|
     t.libs << 'test'
     t.test_files = FileList['test/*/*/*_test.rb']
+end
+
+task :stop_redis do
+    sh 'pkill redis-server'
 end

@@ -1,1 +1,2 @@
-version
+library-path-fix
+remove-bundler-dependecy
