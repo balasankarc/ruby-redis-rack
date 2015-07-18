@@ -13,7 +13,7 @@ Build-Depends: debhelper (>= 7.0.50~),
 Standards-Version: 3.9.6
 Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-redis-rack.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ruby-extras/ruby-redis-rack.git;a=summary
-Homepage: http://redis-store.org/redis-rack
+Homepage: https://github.com/redis-store/redis-rack
 Testsuite: autopkgtest-pkg-ruby
 XS-Ruby-Versions: all
 
